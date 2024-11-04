@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:20:44 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/22 20:52:37 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:46:35 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     return(s1[i] - s2[i]);
 }
 
-int main(void)
-{
-    char    s1[50] = "baap";
-    char    s2[50] = "baam";
+// int main(void)
+// {
+//     char    s1[50] = "baap";
+//     char    s2[50] = "baam";
 
-    printf("%d \n", ft_strncmp(s1, s2, 3));
-    return(0);
-}
+//     printf("%d \n", ft_strncmp(s1, s2, 3));
+//     return(0);
+// }
 
        //• 0, if the s1 and s2 are equal;
 

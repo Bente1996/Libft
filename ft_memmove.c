@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/16 12:57:47 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:44:58 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,12 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     return (str);
 }
 
-int main(void)
-{
-    char str[50] = "9999999";
-    char s[50] = "ffff";
+// int main(void)
+// {
+//     char str[50] = "9999999";
+//     char s[50] = "ffff";
 
-    ft_memmove(str, s, 4);
-    printf("%s \n", str);
-    return (0);
-}
+//     ft_memmove(str, s, 4);
+//     printf("%s \n", str);
+//     return (0);
+// }

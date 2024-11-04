@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:49:56 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/09 15:00:40 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:44:26 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int ft_isprint(int c)
     return (0);
 }
 
-int main(void)
-{
-    printf("%d \n", ft_isprint(' '));
-    return (0);
-}
+// int main(void)
+// {
+//     printf("%d \n", ft_isprint(' '));
+//     return (0);
+// }

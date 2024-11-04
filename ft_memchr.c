@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:33:29 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/22 19:18:54 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:44:44 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,13 @@ void *ft_memchr(const void *s, int c, size_t n)
     return(NULL);
 }
 
-int main(void)
-{
-    char    str[50] = "the first instance of c";
+// int main(void)
+// {
+//     char    str[50] = "the first instance of c";
 
-    printf("%s \n", (char   *)ft_memchr(str, 'i', 50));
-    return(0);
-}
+//     printf("%s \n", (char   *)ft_memchr(str, 'i', 50));
+//     return(0);
+// }
 
        //The  memchr()  function  scans  the  initial n bytes of the memory area
       // pointed to by s for the first instance of c.  Both c and the  bytes  of

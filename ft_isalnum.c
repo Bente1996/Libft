@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:58:58 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/09 15:00:42 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:44:06 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int ft_isalnum(int c)
     return (0);
 }
 
-int main(void)
-{
-    printf("%d \n", ft_isalnum(45));
-    return (0);
-}
+// int main(void)
+// {
+//     printf("%d \n", ft_isalnum(45));
+//     return (0);
+// }

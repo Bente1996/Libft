@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:51:43 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/16 17:08:06 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:47:14 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int ft_tolower(int c)
     return (c);
 }
 
-int main(void)
-{
-    int c = '&';
+// int main(void)
+// {
+//     int c = '&';
 
-    printf("%c \n", ft_tolower(c));
-    return (0);
-}
+//     printf("%c \n", ft_tolower(c));
+//     return (0);
+// }

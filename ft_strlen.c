@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 17:01:22 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/31 17:31:59 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:46:24 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ int ft_strlen(const char *str)
     return (i);
 }
 
-int main(void)
-{
-    char str[55] = "vier";
+// int main(void)
+// {
+//     char str[55] = "vier";
 
-    printf("%d \n", ft_strlen(str));
-    return (0);
-}
+//     printf("%d \n", ft_strlen(str));
+//     return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:11:49 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/11 17:47:21 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:43:55 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ void    ft_bzero(void *s, size_t n)
     }
 }
 
-int main(void)
-{
-    char str[50] = "Hello World";
+// int main(void)
+// {
+//     char str[50] = "Hello World";
 
-    char *ptr = str;
-    ft_bzero(str, 4);
-    printf("%s \n", ptr + 3);
-    return (0);
-}
+//     char *ptr = str;
+//     ft_bzero(str, 4);
+//     printf("%s \n", ptr + 3);
+//     return (0);
+// }

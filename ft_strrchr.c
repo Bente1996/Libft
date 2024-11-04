@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:20:34 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/22 15:05:57 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:46:45 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ char *ft_strrchr(const char *s, int c)
     return (NULL);
 }
 
-int main(void)
-{
-    char s[50] = "blablabo&6969&rrrrrr";
+// int main(void)
+// {
+//     char s[50] = "blablabo&6969&rrrrrr";
 
-    printf("%s \n", ft_strrchr(s, '&'));
-    printf("%p \n", ft_strrchr(s, '&'));
-    return (0);
-}
+//     printf("%s \n", ft_strrchr(s, '&'));
+//     printf("%p \n", ft_strrchr(s, '&'));
+//     return (0);
+// }

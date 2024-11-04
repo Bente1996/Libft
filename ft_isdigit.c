@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:34:52 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/09 14:59:34 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:44:21 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int ft_isdigit(int  c)
     return (0);
 }
 
-int main(void)
-{
-    printf("%d \n", ft_isdigit('b'));
-    return (0);
-}
+// int main(void)
+// {
+//     printf("%d \n", ft_isdigit('b'));
+//     return (0);
+// }

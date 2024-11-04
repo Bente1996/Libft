@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:36:23 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:25:38 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:45:42 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,24 +77,24 @@ char **ft_split(char const *s, char c)
 	return(split);
 }
 
-int	main(void)
-{
-	char const	s[50] = "stringy    thingy swag  fsfsfs sfsfsf ";
-	size_t i = 0;
+// int	main(void)
+// {
+// 	char const	s[50] = "stringy    thingy swag  fsfsfs sfsfsf ";
+// 	size_t i = 0;
 
-	char **split = ft_split(s, ' ');
-	if (split == NULL)
-		printf("null returned :(\n");
-	else
-	{
-		while (split[i] != NULL)
-		{
-			printf("%s \n", split[i]);
-			i++;
-		}
-	}
-	return(0);
-}
+// 	char **split = ft_split(s, ' ');
+// 	if (split == NULL)
+// 		printf("null returned :(\n");
+// 	else
+// 	{
+// 		while (split[i] != NULL)
+// 		{
+// 			printf("%s \n", split[i]);
+// 			i++;
+// 		}
+// 	}
+// 	return(0);
+// }
 
 // Parameters s: The string to be split.
 // c: The delimiter character.

@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:51:17 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/22 19:36:51 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:46:40 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,15 +48,15 @@ char    *ft_strnstr(const char *big, const char *little, size_t len)
     return (NULL);
 }
 
-int main(void)
-{
-    const char big[50] = "dit en niet is de grote en niet de kleine string";
-    const char little[50] = "en niet";
+// int main(void)
+// {
+//     const char big[50] = "dit en niet is de grote en niet de kleine string";
+//     const char little[50] = "en niet";
 
-    printf("%p \n", ft_strnstr(big, little, 20));
-    printf("%s \n", ft_strnstr(big, little, 20));
-    return(0);
-}
+//     printf("%p \n", ft_strnstr(big, little, 20));
+//     printf("%s \n", ft_strnstr(big, little, 20));
+//     return(0);
+// }
 
 //the function locates the first occurence of the '\0'ed string 'little' IN the string 'big', 
 //where not more than len characters are searched, characters that appear after a '\0' are not searched

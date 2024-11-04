@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:16:34 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/16 16:21:17 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:46:14 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,12 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
     return (dstlen + srclen);
 }
 
-int main(void)
-{
-    char dst[55] = "KOOPOOPOOP";
-    char src[55] = "3333333333333";
+// int main(void)
+// {
+//     char dst[55] = "KOOPOOPOOP";
+//     char src[55] = "3333333333333";
 
-    printf("%ld \n", ft_strlcat(dst, src, 15));
-    printf("%s \n", dst);
-    return (0);
-}
+//     printf("%ld \n", ft_strlcat(dst, src, 15));
+//     printf("%s \n", dst);
+//     return (0);
+// }

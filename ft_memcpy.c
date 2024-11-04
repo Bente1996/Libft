@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:28:04 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/11 20:03:30 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:44:54 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     return (str);
 }
 
-int main(void)
-{
-    char str[55] = "KOOPOOPOOP";
-    char s[55] = "3333333333333";
-    int hoi[50] = {42, 535, 643, 5353};
+// int main(void)
+// {
+//     char str[55] = "KOOPOOPOOP";
+//     char s[55] = "3333333333333";
+//     int hoi[50] = {42, 535, 643, 5353};
 
-    ft_memcpy(hoi, s, 5);
-    printf("%s \n", str);
-    return (0);
-}
+//     ft_memcpy(hoi, s, 5);
+//     printf("%s \n", str);
+//     return (0);
+// }

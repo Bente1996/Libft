@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:53:05 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/24 19:50:15 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:45:56 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,13 @@ char *ft_strdup(const char *s)
     return(ptr);
 }
 
-int main(void)
-{
-    char s[50] = "originele string";
+// int main(void)
+// {
+//     char s[50] = "originele string";
 
-    printf();
-    return(0);
-}
+//     printf();
+//     return(0);
+// }
 
 // The  strdup() function returns a pointer to a new string which is a du‐
 // plicate of the string s.  Memory for the new string  is  obtained  with
@@ -54,7 +54,7 @@ int main(void)
 // string.  It returns NULL if insufficient memory was available, with er‐
 // rno set to indicate the cause of the error.
 
-1. Allocates space for a new string, setting the size the same as the original string
-2. Copies the original string into the new allocated space, including the null character (\0)
+// 1. Allocates space for a new string, setting the size the same as the original string
+// 2. Copies the original string into the new allocated space, including the null character (\0)
 
-If space can’t be allocated, the function returns a NULL pointer.
+// If space can’t be allocated, the function returns a NULL pointer.

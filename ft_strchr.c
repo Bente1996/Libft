@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:54:01 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/17 17:52:38 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:45:47 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ char *ft_strchr(const char *s, int c)
     return (NULL);
 }
 
-int main(void)
-{
-    char    s[50] = "hahahh7aha"; 
+// int main(void)
+// {
+//     char    s[50] = "hahahh7aha"; 
 
-    printf("%p \n", ft_strchr(s, '7'));
-    printf("%s \n", ft_strchr(s, '7')); //call function again but start at s[i] = c
-    return (0);
-}
+//     printf("%p \n", ft_strchr(s, '7'));
+//     printf("%s \n", ft_strchr(s, '7')); //call function again but start at s[i] = c
+//     return (0);
+// }

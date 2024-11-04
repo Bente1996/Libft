@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:19:28 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/24 12:45:21 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:43:50 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,13 @@ int ft_atoi(const char *nptr)
     return(NPTR * sign);
 }
 
-int main(void)
-{
-    char nptr[50] = "   +---+4567890";
+// int main(void)
+// {
+//     char nptr[50] = "   +---+4567890";
 
-    printf("%d \n", ft_atoi(nptr));
-    return(0);
-}
+//     printf("%d \n", ft_atoi(nptr));
+//     return(0);
+// }
 
 
 //  The  atoi() function converts the initial portion of the string pointed

@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:35:00 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/10/26 19:30:59 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:46:58 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,32 +37,32 @@ char *ft_strtrim(char const *s1, char const *set)
 										 //the trimmed string has the length of j - i and add 1 for the '\0' 
 }
 
-int	main(void)
-{
-	char	s1[50] = "deze gaan weg 5555555555 deze gaan weg 5555555 deze gaan weg";
-	char	set[50] = "gaan deze weg";
+// int	main(void)
+// {
+// 	char	s1[50] = "deze gaan weg 5555555555 deze gaan weg 5555555 deze gaan weg";
+// 	char	set[50] = "gaan deze weg";
 
-	printf("%s \n", ft_strtrim(s1, set));
-	return(0);
-}
+// 	printf("%s \n", ft_strtrim(s1, set));
+// 	return(0);
+// }
 
 
-{
-	size_t	start;
-	size_t	end;
-	size_t	i;
+// {
+// 	size_t	start;
+// 	size_t	end;
+// 	size_t	i;
 
-	if (!s1 || !set)
-		return (NULL);
-	start = 0;
-	end = ft_strlen(s1);
-	i = 0;
-	while (ft_strchr(set, s1[start]) && s1[start]) //strchr returns pointer to chosen character in string s1, zolang het eerste/laatste deel vd string
-                                                   //de characters bevat van set op dezelfde volgorde doorgaan anders stoppen
-		start++;
-	if (s1[start] == '\0')
-		return (ft_strdup(""));
-	while (ft_strchr(set, s1[end]))
-		end--;
-	return (ft_substr(s1, start, end - start + 1)); 
-}
+// 	if (!s1 || !set)
+// 		return (NULL);
+// 	start = 0;
+// 	end = ft_strlen(s1);
+// 	i = 0;
+// 	while (ft_strchr(set, s1[start]) && s1[start]) //strchr returns pointer to chosen character in string s1, zolang het eerste/laatste deel vd string
+//                                                    //de characters bevat van set op dezelfde volgorde doorgaan anders stoppen
+// 		start++;
+// 	if (s1[start] == '\0')
+// 		return (ft_strdup(""));
+// 	while (ft_strchr(set, s1[end]))
+// 		end--;
+// 	return (ft_substr(s1, start, end - start + 1)); 
+// }
