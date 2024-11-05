@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:47:13 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:44:01 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 16:23:44 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "libft.h"
 
 void *ft_calloc(size_t nmemb, size_t size)
 {

@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:44:58 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:05:18 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     str = dest;
     s = src;
     i = 0;
+	temp = 0;
 
 	// if (temp == NULL || s == NULL) return (NULL); //toevoegen?
 

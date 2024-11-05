@@ -35,7 +35,7 @@ ft_putstr_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c
 
-OBJFILES := $(SRCFILES:.c=.o) #maybe spaces?
+OBJFILES := $(SRCFILES:.c=.o)
 CFLAGS ?= -Wall -Wextra -Werror -c
 
 all : $(NAME)
@@ -43,10 +43,10 @@ all : $(NAME)
 $(NAME): $(OBJFILES)
 	ar -rcs $(NAME) $(OBJFILES)
 
-$(OBJFILES): $(SRCFILES)
-	gcc $(CFLAGS) $(SRCFILES)
+%.o: %.c
+	gcc $(CFLAGS) $^
 
-clean
+clean:
 	rm -f $(OBJFILES)
 fclean: clean
 	rm -f $(NAME)

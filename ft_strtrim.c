@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:35:00 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:46:58 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 16:40:28 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "libft.h"
 
 char *ft_strtrim(char const *s1, char const *set)
 {
