@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:20:44 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:46:35 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 19:48:52 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     unsigned int    i;
 
     i = 0;
+	if (n == 0)
+		return (0);
     while((s1[i] == s2[i]) && (n > 1) && (s1[i] != '\0') && (s2[i] != '\0'))
     {
         i++;

@@ -6,13 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:39:31 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:44:39 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/06 18:44:14 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include <libft.h>
+#include "libft.h"
 
  int lencheck(long n)
 {
@@ -35,16 +35,16 @@
 char *ft_itoa(int n)
 {
     char    *s;
-    int	len; // or size_t?
+    size_t	len;
     long    N; //for when lowest int turns positive
 
-    //if (n == 0)
-    //return (ft_strdup("0");
+    if (n == 0)
+    	return (ft_strdup("0"));
     N = (long)n;
     len = lencheck(N); //check how many characters s will have
     s = malloc((len + 1) * sizeof(char));
-    if (s == NULL)  //?
-    return (NULL);
+    if (s == NULL)
+    	return (NULL);
     if (N < 0)
     {
         s[0] = '-'; //put '-' when negative

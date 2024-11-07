@@ -6,38 +6,38 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:51:41 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 17:41:14 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:58:53 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
-{	
-    char             *substr;
-    unsigned int    i;
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char			*substr;
+	unsigned int	i;
 
-    i = 0;
-    while((s[start + i] != '\0') && (len > 0))
-    {
-        i++;
-        len--;
-    }
-    substr = malloc(i + 1);
-    if(substr == NULL)
-    {
-        return(substr);
-    }
-    substr[i] = '\0';
-    i--;
-    while(i > 0)
-    {
-        substr[i] = s[start + i];
-        i--;
-    }
-    substr[0] = s[start];
-    return(substr);
+	i = 0;
+	while ((s[start + i] != '\0') && (len > 0))
+	{
+		i++;
+		len--;
+	}
+	substr = malloc(i + 1);
+	if (substr == NULL)
+	{
+		return (substr);
+	}
+	substr[i] = '\0';
+	i--;
+	while (i > 0)
+	{
+		substr[i] = s[start + i];
+		i--;
+	}
+	substr[0] = s[start];
+	return (substr);
 }
 
 // int main(void)

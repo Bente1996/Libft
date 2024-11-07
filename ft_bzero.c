@@ -6,23 +6,23 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:11:49 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 16:20:32 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:41:05 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    unsigned char *str;
+	unsigned char	*str;
 
-    str = (unsigned char *)s;
-    while (n > 0)
-    {
-        *str = '\0';
-        str++;
-        n--;
-    }
+	str = (unsigned char *)s;
+	while (n > 0)
+	{
+		*str = '\0';
+		str++;
+		n--;
+	}
 }
 
 // int main(void)

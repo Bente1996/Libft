@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:36:23 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:45:42 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 19:05:39 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	strcount(char const *s, char c)
 			i++;
 		i++;
 	}
-	return(count);
+	return (count);
 }
 
 static char	**ft_free(char **split, size_t ptr)
@@ -43,38 +43,38 @@ static char	**ft_free(char **split, size_t ptr)
 		i++;
 	}
 	free(split);
-	return(NULL);
+	return (NULL);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	unsigned int	start;
-	size_t	len;
-	size_t	ptr;
-	char	**split;
+	size_t			len;
+	size_t			ptr;
+	char			**split;
 
 	split = malloc((strcount(s, c) + 1) * sizeof(char *));
 	if (split == NULL)
 		return (NULL);
 	ptr = 0;
 	start = 0;
-	while(s[start] != '\0')
+	while (s[start] != '\0')
 	{
 		len = 0;
 		while (s[start] == c)
 			start++;
-		while ((s[start + len] != c) && (s[start +len] != '\0'))
+		while ((s[start + len] != c) && (s[start + len] != '\0'))
 			len++;
 		if (len == 0)
-			break;
+			break ;
 		split[ptr] = ft_substr(s, start, len);
-		if (split[ptr] == NULL) //wanneer substr niet lukt freeen
+		if (split[ptr] == NULL)
 			return (ft_free(split, ptr));
 		ptr++;
 		start = start + len;
 	}
 	split[ptr] = NULL;
-	return(split);
+	return (split);
 }
 
 // int	main(void)

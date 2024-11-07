@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:33:29 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:44:44 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/06 19:32:50 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ void *ft_memchr(const void *s, int c, size_t n)
     str = s;
     C = c;
     i = 0;
-    while((str[i] != '\0') && (n > 0))
+	if (str == NULL) //toegevoegd, nu extra error
+		return (NULL);
+    while(n > 0)
     {
         i++;
         if(str[i] == C)

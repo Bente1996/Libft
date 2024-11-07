@@ -6,19 +6,19 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:21:53 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:47:19 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:50:43 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if ((c >= 'a') && (c <= 'z'))
-    {
-        c -= 32; 
-    }
-    return (c);
+	if ((c >= 'a') && (c <= 'z'))
+	{
+		c -= 32;
+	}
+	return (c);
 }
 
 // int main(void)

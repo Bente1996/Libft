@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:47:13 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 16:23:44 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:54:43 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 #include <stdlib.h>
 #include "libft.h"
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-    void    *ptr;
+	void	*ptr;
 
-    ptr = malloc(nmemb * size);
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
-    {
-		return(ptr);
-    }
+	{
+		return (ptr);
+	}
 	ft_bzero(ptr, nmemb * size);
-    {
-	    return(ptr);
-    }
+	{
+		return (ptr);
+	}
 }
 
 // int main(void)

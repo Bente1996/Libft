@@ -6,51 +6,48 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:12:02 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:46:08 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 19:01:20 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*s3;
+	char			*s3;
 	unsigned int	i;
 	unsigned int	j;
 	unsigned int	k;
 
 	i = 0;
 	j = 0;
-	while(s1[i] != '\0')
+	while (s1[i] != '\0')
 		i++;
-
-	while(s2[j] != '\0')
+	while (s2[j] != '\0')
 		j++;
-		
 	s3 = malloc(i + j + 1);
-	if(s3 == NULL)
+	if (s3 == NULL)
 	{
-		return(s3);
+		return (s3);
 	}
 	i = 0;
 	j = 0;
 	k = 0;
-	while(s1[i] != '\0')
+	while (s1[i] != '\0')
 	{
 		s3[k] = s1[i];
 		i++;
 		k++;
 	}
-
-	while(s2[j] != '\0')
+	while (s2[j] != '\0')
 	{
 		s3[k] = s2[j];
 		j++;
 		k++;
 	}
 	s3[k] = '\0';
-	return(s3);
+	return (s3);
 }
 
 // int	main(void)
@@ -61,8 +58,6 @@ char *ft_strjoin(char const *s1, char const *s2)
 // 	printf("%s \n", ft_strjoin(s1, s2));
 // 	return(0);
 // }
-
-
 
 //Function name ft_strjoin
 //Prototype char *ft_strjoin(char const *s1, char const *s2);

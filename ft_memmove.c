@@ -6,46 +6,43 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 19:05:18 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/07 14:01:39 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void *ft_memmove(void *dest, const void *src, size_t n) //temporary string?!?!?!
 {
     unsigned char *str;
     const char   *s;
-    unsigned int    i;
-    unsigned char	*temp;
+    size_t   i;
 
     str = dest;
     s = src;
     i = 0;
-	temp = 0;
 
-	// if (temp == NULL || s == NULL) return (NULL); //toevoegen?
-
-    while ((temp[i] != '\0') && (s[i] != '\0') && (n > 0))
+	if (str == NULL || s == NULL)
+		return (NULL);
+    while (n > 0)
     {
-        temp[i] = s[i];
-        i++;
-        n--;
+		while ((size_t)(str - (unsigned char *)s) < n)
+		{
+			
+		}
+        	str[i] = s[i];
+        	i++;
+        	n--;
     }
-	while ((temp[i] != '\0') && (str[i] != '\0'))
-	{
-		str[i] = temp[i];
-		i++;
-	}
     return (str);
 }
 
 // int main(void)
 // {
-//     char str[50] = "9999999";
-//     char s[50] = "ffff";
+//     char str[50] = "777771234569999999999";
+// //     char s[50] = "vlaflip";
+//     ft_memmove(&str[5], str ,7);
 
-//     ft_memmove(str, s, 4);
 //     printf("%s \n", str);
 //     return (0);
 // }

@@ -6,36 +6,36 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:53:05 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:45:56 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:57:06 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-    char    *ptr;
-    size_t    i;
+	char	*ptr;
+	size_t	i;
 
-    i = 0;
-    while(s[i] != '\0')
-    {
-        i++;
-    }
-    ptr = malloc(i + 1);
-    if(ptr == NULL)
-    {
-        return(ptr);
-    }
-    i = 0;
-    while(ptr[i] != '\0')
-    {
-        ptr[i] = s[i];
-        i++;
-    }
-    ptr[i] = '\0';
-    return(ptr);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	ptr = malloc(i + 1);
+	if (ptr == NULL)
+	{
+		return (ptr);
+	}
+	i = 0;
+	while (ptr[i] != '\0')
+	{
+		ptr[i] = s[i];
+		i++;
+	}
+	ptr[i] = '\0';
+	return (ptr);
 }
 
 // int main(void)
@@ -54,7 +54,9 @@ char *ft_strdup(const char *s)
 // string.  It returns NULL if insufficient memory was available, with er‐
 // rno set to indicate the cause of the error.
 
-// 1. Allocates space for a new string, setting the size the same as the original string
-// 2. Copies the original string into the new allocated space, including the null character (\0)
+// 1. Allocates space for a new string, setting the size the same as the
+// original string
+// 2. Copies the original string into the new allocated space, including 
+//the null character (\0)
 
 // If space can’t be allocated, the function returns a NULL pointer.

@@ -6,19 +6,19 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:51:43 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:47:14 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:51:30 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if ((c >= 'A') && (c <= 'Z'))
-    {
-        c += 32; 
-    }
-    return (c);
+	if ((c >= 'A') && (c <= 'Z'))
+	{
+		c += 32;
+	}
+	return (c);
 }
 
 // int main(void)

@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:19:28 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:43:50 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/06 19:19:10 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,15 @@ int ft_atoi(const char *nptr)
         i++;
     }
 
-    while((nptr[i] == '-') || (nptr[i] == '+'))
+    if((nptr[i] == '-') || (nptr[i] == '+'))
     {
         if(nptr[i] == '-')
         {
             sign *= -1;
         }
         i++;
+		if(nptr[i] == '-' || nptr[i] == '+')
+			return (0);
     }
 
     while((nptr[i] >= '0') && (nptr[i] <= '9'))
