@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:51:17 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/04 18:46:40 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:32:13 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char    *ft_strnstr(const char *big, const char *little, size_t len)
 {
-    unsigned int    i;
-    unsigned int    j;
+    size_t    i;
+    size_t    j;
     char*   ptr;
 
     i = 0;
@@ -43,6 +43,7 @@ char    *ft_strnstr(const char *big, const char *little, size_t len)
             }
         }
         j++;
+		len--;
         i = 0;
     }
     return (NULL);

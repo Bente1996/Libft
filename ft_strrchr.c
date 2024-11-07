@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:20:34 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 19:44:00 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/07 18:13:37 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,22 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-    unsigned int    len;
-    unsigned int    i;
+    int    len;
 
     len = 0;
     while (s[len] != '\0')
     {
         len++;
     }
-    i = len;     
-    
-    while (i > 0)
+   
+    while (len >= 0)
     {
-        if (s[i] == c)
+        if (s[len] == c)
         {
-            s += i;     
+            s += len;     
             return ((char *)s);
         }
-        i--;
+        len--;
     }
     return (NULL);
 }

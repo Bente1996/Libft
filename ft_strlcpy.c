@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 12:59:57 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/06 18:36:09 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:22:50 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,12 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 
     i = 0;
     j = 0;
-	if (size == '\0')
-		return (i);
     while ((src[i] != '\0'))
     {
         i++;
     }
-  
+	if (size == 0)
+		return (i);
     while ((src[j] != '\0') && (size > 1))
     {
         dst[j] = src[j];

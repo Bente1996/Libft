@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:18:59 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 16:41:36 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/07 21:06:58 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,15 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     if (s == NULL || f == NULL)
         return (NULL);
     i = 0;
-    str = (char *)s;
     str = malloc((ft_strlen(s) + 1) * sizeof(char));
     if (str == NULL)
         return (NULL);
-    while (str[i] != '\0')
+    while (s[i] != '\0')
     {
-        str[i] = f(i, str[i]);
+        str[i] = f(i, s[i]);
         i++;
     }
+	str[i] = '\0';
     return (str);
 }
 

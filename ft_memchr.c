@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:33:29 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/06 19:32:50 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:16:22 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,25 @@
 
 void *ft_memchr(const void *s, int c, size_t n)
 {
-    unsigned int    i;
-    const char  *str;
+    size_t    i;
+    const unsigned char  *str;
     unsigned char   C;
     unsigned char*  ptr;
 
     str = s;
     C = c;
-    i = 0;
-	if (str == NULL) //toegevoegd, nu extra error
+	i = 0;
+	if (n == 0 || s == NULL)
 		return (NULL);
     while(n > 0)
     {
-        i++;
         if(str[i] == C)
         {
             ptr = (unsigned char *)&str[i];
             return(ptr);
         }
+        i++;
+		n--;
     }
     return(NULL);
 }
@@ -40,7 +41,7 @@ void *ft_memchr(const void *s, int c, size_t n)
 // {
 //     char    str[50] = "the first instance of c";
 
-//     printf("%s \n", (char   *)ft_memchr(str, 'i', 50));
+//     printf("%s \n", (char   *)ft_memchr(str, 'i', 2));
 //     return(0);
 // }
 

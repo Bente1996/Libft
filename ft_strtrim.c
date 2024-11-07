@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:35:00 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 16:40:28 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:34:54 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char *ft_strtrim(char const *s1, char const *set)
 		start++;
 	} //now we know how many characters have to be removed at the start
 	if (s1[start] == '\0')
-		return(NULL); 
+		return(ft_strdup("\0")); 
 	end = ft_strlen(s1);
 	while(ft_strchr(set, s1[end])) //move through s1 as long as s1[j] is a character of the string 'set'
 	{
