@@ -6,46 +6,39 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/07 15:07:30 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:02:42 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-    unsigned char *str;
-    const char   *s;
-    size_t   i;
+	unsigned char	*str;
+	const char		*s;
+	size_t			i;
 
-    str = dest;
-    s = src;
-
+	str = dest;
+	s = src;
 	if (str == NULL || s == NULL)
 		return (NULL);
 	if ((size_t)(str - (unsigned char *)s) < n)
-    {
-		i = n - 1;
-    	while (n > 0)
-		{	
-        	str[i] = s[i];
-        	i--;
-        	n--;
-		}
-    }
-	else
 	{
-		i = 0;
+		i = n - 1;
 		while (n > 0)
 		{
 			str[i] = s[i];
-			i++;
+			i--;
 			n--;
 		}
 	}
-    return (str);
+	else
+	{
+		ft_memcpy(dest, src, n);
+	}
+	return (str);
 }
-
 // int main(void)
 // {
 //     char str[50] = "777771234569999999999";

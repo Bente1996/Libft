@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:39:31 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/06 18:44:14 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/12 17:37:15 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,56 +14,55 @@
 #include <stdlib.h>
 #include "libft.h"
 
- int lencheck(long n)
+int	lencheck(long n)
 {
-    int len;
+	int	len;
 
-    len = 0;
-    if (n < 0)
-    {
-        n *= -1; //we need positive amount of characters
-        len++;
-    }
-    while (n > 0)
-    {
-        n /= 10; //every /10 stands for a character
-        len++;
-    }
-    return(len);
+	len = 0;
+	if (n < 0)
+	{
+		n *= -1;
+		len++;
+	}
+	while (n > 0)
+	{
+		n /= 10;
+		len++;
+	}
+	return (len);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    char    *s;
-    size_t	len;
-    long    N; //for when lowest int turns positive
+	char	*s;
+	size_t	len;
+	long	n2;
 
-    if (n == 0)
-    	return (ft_strdup("0"));
-    N = (long)n;
-    len = lencheck(N); //check how many characters s will have
-    s = malloc((len + 1) * sizeof(char));
-    if (s == NULL)
-    	return (NULL);
-    if (N < 0)
-    {
-        s[0] = '-'; //put '-' when negative
-        N *= -1; //make positive
-    }
-    s[len] = '\0';
-    while (N > 0)
-    {
-        len--; //move one character down
-        s[len] = (N % 10) + 48; //fills end string with last digit and converts to character
-        N /= 10; //removes last digit from N
-    }
-    return(s);
+	if (n == 0)
+		return (ft_strdup("0"));
+	n2 = (long)n;
+	len = lencheck(n2);
+	s = malloc((len + 1) * sizeof(char));
+	if (s == NULL)
+		return (NULL);
+	if (n2 < 0)
+	{
+		s[0] = '-';
+		n2 *= -1;
+	}
+	s[len] = '\0';
+	while (n2 > 0)
+	{
+		len--;
+		s[len] = (n2 % 10) + 48;
+		n2 /= 10;
+	}
+	return (s);
 }
 
 // int main(void)
 // {
 //     int n = -2147483648;
-
 //     printf("%s \n", ft_itoa(n));
 //     return(0);
 // }

@@ -6,33 +6,33 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:18:56 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/07 20:26:21 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/12 17:46:39 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-    unsigned char   N;
-    const char   *str1;
-    const char   *str2;
-    size_t		i;
+	unsigned char	n2;
+	const char		*str1;
+	const char		*str2;
+	size_t			i;
 
-    N = n;
-    str1 = s1;
-    str2 = s2;
-    i = 0;
+	n2 = n;
+	str1 = s1;
+	str2 = s2;
+	i = 0;
 	if (n == 0)
 		return (0);
-    while((str1[i] == str2[i]) && (N > 1) && (str1[i] != '\0') && (str2[i] != '\0'))
-    {
-        i++;
-        N--;
-    }
-    return((unsigned char)str1[i] - (unsigned char)str2[i]);
+	while ((str1[i] == str2[i]) && (n2 > 1) && (str1[i] != '\0') \
+	&& (str2[i] != '\0'))
+	{
+		i++;
+		n2--;
+	}
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
-
 // int main(void)
 // {
 //     const char s1[50] = "baapa";
@@ -54,4 +54,3 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 //      char) that differ in s1 and s2.
 
 //     If n is zero, the return value is zero.
-

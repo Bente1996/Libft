@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:36:23 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 19:05:39 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 13:35:30 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,26 @@ static char	**ft_free(char **split, size_t ptr)
 	return (NULL);
 }
 
+static char	**mallocsplit(char const *s, char c)
+{
+	char	**split;
+
+	if (s == NULL)
+		return (NULL);
+	split = malloc((strcount(s, c) + 1) * sizeof(char *));
+	return (split);
+}
+
+size_t	delimlen(char const *s, char c)
+{
+	size_t	start;
+
+	start = 0;
+	while (s[start] == c)
+		start++;
+	return (start);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	unsigned int	start;
@@ -53,7 +73,7 @@ char	**ft_split(char const *s, char c)
 	size_t			ptr;
 	char			**split;
 
-	split = malloc((strcount(s, c) + 1) * sizeof(char *));
+	split = mallocsplit(s, c);
 	if (split == NULL)
 		return (NULL);
 	ptr = 0;
@@ -61,8 +81,7 @@ char	**ft_split(char const *s, char c)
 	while (s[start] != '\0')
 	{
 		len = 0;
-		while (s[start] == c)
-			start++;
+		start = delimlen(&s[start], c) + start;
 		while ((s[start + len] != c) && (s[start + len] != '\0'))
 			len++;
 		if (len == 0)
@@ -80,7 +99,7 @@ char	**ft_split(char const *s, char c)
 // int	main(void)
 // {
 // 	char const	s[50] = "stringy    thingy swag  fsfsfs sfsfsf ";
-// 	size_t i = 0;
+// 	size_t	i = 0;
 
 // 	char **split = ft_split(s, ' ');
 // 	if (split == NULL)
