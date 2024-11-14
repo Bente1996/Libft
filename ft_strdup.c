@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:53:05 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 18:57:06 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 18:11:17 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,12 @@ char	*ft_strdup(const char *s)
 
 	i = 0;
 	while (s[i] != '\0')
-	{
 		i++;
-	}
 	ptr = malloc(i + 1);
 	if (ptr == NULL)
-	{
-		return (ptr);
-	}
+		return (NULL);
 	i = 0;
-	while (ptr[i] != '\0')
+	while (s[i] != '\0')
 	{
 		ptr[i] = s[i];
 		i++;

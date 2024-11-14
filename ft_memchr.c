@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:33:29 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/12 17:40:29 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:55:04 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	str = s;
 	c2 = c;
 	i = 0;
-	if (n == 0 || s == NULL)
+	if (n == 0)
 		return (NULL);
 	while (n > 0)
 	{

@@ -6,25 +6,25 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:20:44 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/07 20:23:32 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:55:29 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    size_t   i;
+	size_t	i;
 
-    i = 0;
+	i = 0;
 	if (n == 0)
 		return (0);
-    while((s1[i] == s2[i]) && (n > 1) && (s1[i] != '\0'))
-    {
-        i++;
-        n--;
-    }
-    return((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
+	while ((s1[i] == s2[i]) && (n > 1) && (s1[i] != '\0'))
+	{
+		i++;
+		n--;
+	}
+	return ((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
 }
 
 // int main(void)

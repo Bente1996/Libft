@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:54:01 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 18:53:34 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 18:34:19 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while ((unsigned char)s[i] != '\0')
 	{
-		if (s[i] == c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 		{
 			s += i;
 			return ((char *)s);
 		}
 		i++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 	{
 		s += i;
 		return ((char *)s);

@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/12 18:02:42 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:53:46 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	str = dest;
 	s = src;
-	if (str == NULL || s == NULL)
+	if (str == NULL && s == NULL)
 		return (NULL);
 	if ((size_t)(str - (unsigned char *)s) < n)
 	{

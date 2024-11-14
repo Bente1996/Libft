@@ -6,34 +6,33 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 12:59:57 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/07 15:22:50 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:49:39 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-size_t ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
+	size_t			i;
+	unsigned int	j;
 
-    size_t i;
-    unsigned int    j;
-
-    i = 0;
-    j = 0;
-    while ((src[i] != '\0'))
-    {
-        i++;
-    }
+	i = 0;
+	j = 0;
+	while ((src[i] != '\0'))
+	{
+		i++;
+	}
 	if (size == 0)
 		return (i);
-    while ((src[j] != '\0') && (size > 1))
-    {
-        dst[j] = src[j];
-        j++;
-        size--;
-    }
-    dst[j] = '\0';
-    return (i);
+	while ((src[j] != '\0') && (size > 1))
+	{
+		dst[j] = src[j];
+		j++;
+		size--;
+	}
+	dst[j] = '\0';
+	return (i);
 }
 
 // int main(void)

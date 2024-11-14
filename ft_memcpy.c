@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:28:04 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/06 19:10:20 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:21:16 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	str = dest;
 	s = src;
 	i = 0;
-	if (str == NULL || s == NULL)
-		return (str);
+	if (str == NULL && s == NULL)
+		return (NULL);
 	while (n > 0)
 	{
 		str[i] = s[i];

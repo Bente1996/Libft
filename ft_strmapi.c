@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:18:59 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/13 13:35:24 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/14 18:50:44 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,31 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    char    *str;
-    unsigned int    i;
+	char			*str;
+	unsigned int	i;
 
-    if (s == NULL || f == NULL)
-        return (NULL);
-    i = 0;
-    str = malloc((ft_strlen(s) + 1) * sizeof(char));
-    if (str == NULL)
-        return (NULL);
-    while (s[i] != '\0')
-    {
-        str[i] = f(i, s[i]);
-        i++;
-    }
+	if (s == NULL || f == NULL)
+		return (NULL);
+	i = 0;
+	str = malloc((ft_strlen(s) + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	while (s[i] != '\0')
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
 	str[i] = '\0';
-    return (str);
+	return (str);
 }
 
 // int main(void)
 // {
 //     char s[50] = "dit is een string";
-//     char    *f; //has to be a function that takes an int and char as parameters
+//     char    *f; //has to be a function 
+//that takes an int and char as parameters
 //     char    c;
 
 //     f = write(1, &c, 1);

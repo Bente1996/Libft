@@ -6,37 +6,35 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:51:41 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 18:58:53 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/14 18:49:21 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*substr;
-	unsigned int	i;
+	char	*substr;
+	size_t	s_len;
 
-	i = 0;
-	while ((s[start + i] != '\0') && (len > 0))
-	{
-		i++;
-		len--;
-	}
-	substr = malloc(i + 1);
+	if (s == NULL)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (((size_t)start >= s_len))
+		return (ft_strdup(""));
+	if (start + len > s_len)
+		len = s_len - start;
+	substr = malloc(len + 1);
 	if (substr == NULL)
-	{
 		return (substr);
-	}
-	substr[i] = '\0';
-	i--;
-	while (i > 0)
+	substr[len] = '\0';
+	while (len > 0)
 	{
-		substr[i] = s[start + i];
-		i--;
+		len--;
+		substr[len] = s[start + len];
 	}
-	substr[0] = s[start];
 	return (substr);
 }
 
