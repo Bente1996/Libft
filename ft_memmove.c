@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/13 17:53:46 by bde-koni         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_memmove.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: frog <frog@student.42.fr>                    +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/11 19:43:14 by bde-koni      #+#    #+#                 */
+/*   Updated: 2024/11/15 17:16:29 by frog          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-	{
 		ft_memcpy(dest, src, n);
-	}
 	return (str);
 }
 // int main(void)
 // {
 //     char str[50] = "777771234569999999999";
-// //     char s[50] = "vlaflip";
+//     char s[50] = "vlaflip";
 //     ft_memmove(&str[5], str ,1);
-
+//
 //     printf("%s \n", str);
 //     return (0);
 // }

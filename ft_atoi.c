@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 20:19:28 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/13 14:21:08 by bde-koni         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_atoi.c                                          :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: frog <frog@student.42.fr>                    +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/22 20:19:28 by bde-koni      #+#    #+#                 */
+/*   Updated: 2024/11/15 16:55:40 by frog          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_atoi(const char *nptr)
 	}
 	while ((nptr[i] >= '0') && (nptr[i] <= '9'))
 	{
-		nptr2 = (nptr[i] - 48) + 10 * nptr2;
+		nptr2 = (nptr[i] - 48) + (10 * nptr2);
 		i++;
 	}
 	return (nptr2 * sign);
@@ -47,7 +47,5 @@ int	ft_atoi(const char *nptr)
 //     printf("%d \n", ft_atoi(nptr));
 //     return(0);
 // }
-//  The  atoi() function converts the initial portion of the string pointed
-//  to by nptr to int.
-//  RETURN VALUE
-//  The converted value or 0 on error.
+//
+//FUNCTION: characters to integer
