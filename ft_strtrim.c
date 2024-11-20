@@ -6,12 +6,10 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:35:00 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/14 18:52:24 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:30:56 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -35,9 +33,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 // int	main(void)
 // {
 // 	char	s1[50] = "deze gaan weg 5555555555 
-//deze gaan weg 5555555 deze gaan weg";
+// deze gaan weg 5555555 deze gaan weg";
 // 	char	set[50] = "gaan deze weg";
-
+//
 // 	printf("%s \n", ft_strtrim(s1, set));
 // 	return(0);
 // }
+//
+// FUNCTION: allocates and return trimmed string

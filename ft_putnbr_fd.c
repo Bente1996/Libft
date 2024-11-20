@@ -6,12 +6,11 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:55:22 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/13 18:41:03 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:21:33 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -39,3 +38,5 @@ void	ft_putnbr_fd(int n, int fd)
 //     printf("\n");
 //     return (0);
 // }
+//
+// FUNCTION: writes integer into certain file descriptor

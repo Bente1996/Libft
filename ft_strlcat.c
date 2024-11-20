@@ -6,11 +6,11 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:16:34 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/13 14:52:53 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:34:52 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -45,8 +45,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // {
 //     char dst[55] = "KOOPOOPOOP";
 //     char src[55] = "3333333333333";
-
+//
 //     printf("%ld \n", ft_strlcat(dst, src, 15));
 //     printf("%s \n", dst);
 //     return (0);
 // }
+//
+// FUNCTION:copy and concatenate

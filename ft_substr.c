@@ -6,12 +6,10 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:51:41 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/14 18:49:21 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:31:33 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -41,19 +39,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // int main(void)
 // {
 //     char s[50] = "hallo dit is de hele string hihi haha";
-
+//
 //     printf("%s \n", ft_substr(s, 8, 4));
 //     return(0);
 // }
-
-//Allocates (with malloc(3)) and returns a substring
-//from the string ’s’.
-//The substring begins at index ’start’ and is of
-//maximum size ’len’.
-
-//Parameters s: The string from which to create the substring.
-//start: The start index of the substring in the
-//string ’s’.
-//len: The maximum length of the substring.
-//Return value The substring.
-//NULL if the allocation fails.
+//
+// FUNCTION: allocates and returns substring from s

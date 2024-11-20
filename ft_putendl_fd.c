@@ -6,11 +6,11 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:51:44 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 19:11:14 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:22:33 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -36,3 +36,5 @@ void	ft_putendl_fd(char *s, int fd)
 //     ft_putendl_fd(s, fd);
 //     return (0);
 // }
+//
+// FUNCTION: writes string and new line into certain file descriptor

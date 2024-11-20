@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   ft_bzero.c                                         :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: frog <frog@student.42.fr>                    +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2024/10/09 17:11:49 by bde-koni      #+#    #+#                 */
-/*   Updated: 2024/11/15 17:11:41 by frog          ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/09 17:11:49 by bde-koni          #+#    #+#             */
+/*   Updated: 2024/11/19 15:31:51 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -28,7 +28,7 @@ void	ft_bzero(void *s, size_t n)
 // int main(void)
 // {
 //     char str[50] = "Hello World";
-
+//
 //     char *ptr = str;
 //     ft_bzero(str, 4);
 //     printf("%s \n", ptr + 3);

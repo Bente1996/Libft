@@ -6,11 +6,11 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 17:39:21 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 19:10:04 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:22:03 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
@@ -31,3 +31,5 @@ void	ft_putstr_fd(char *s, int fd)
 //     ft_putstr_fd(s, fd);
 //     return (0);
 // }
+//
+// FUNCTION: writtes string into certain file descriptor

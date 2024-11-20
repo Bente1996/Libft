@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   ft_atoi.c                                          :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: frog <frog@student.42.fr>                    +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2024/10/22 20:19:28 by bde-koni      #+#    #+#                 */
-/*   Updated: 2024/11/15 16:55:40 by frog          ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/22 20:19:28 by bde-koni          #+#    #+#             */
+/*   Updated: 2024/11/19 15:31:46 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -43,7 +43,7 @@ int	ft_atoi(const char *nptr)
 // int main(void)
 // {
 //     char nptr[50] = "   +---+4567890";
-
+//
 //     printf("%d \n", ft_atoi(nptr));
 //     return(0);
 // }

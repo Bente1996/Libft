@@ -1,16 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   ft_memmove.c                                       :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: frog <frog@student.42.fr>                    +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2024/10/11 19:43:14 by bde-koni      #+#    #+#                 */
-/*   Updated: 2024/11/15 17:16:29 by frog          ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
+/*   Updated: 2024/11/19 15:32:18 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
@@ -37,6 +36,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(dest, src, n);
 	return (str);
 }
+
 // int main(void)
 // {
 //     char str[50] = "777771234569999999999";
@@ -46,3 +46,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 //     printf("%s \n", str);
 //     return (0);
 // }
+//
+// FUNCTION: cpies n bytes from memory area src to dest

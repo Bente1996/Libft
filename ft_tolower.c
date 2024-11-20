@@ -6,11 +6,11 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:51:43 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/05 18:51:30 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:31:37 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -24,7 +24,7 @@ int	ft_tolower(int c)
 // int main(void)
 // {
 //     int c = '&';
-
+//
 //     printf("%c \n", ft_tolower(c));
 //     return (0);
 // }

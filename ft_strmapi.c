@@ -6,12 +6,10 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:18:59 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/14 18:50:44 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:48:00 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
@@ -38,11 +36,14 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // {
 //     char s[50] = "dit is een string";
 //     char    *f; //has to be a function 
-//that takes an int and char as parameters
+// that takes an int and char as parameters
 //     char    c;
-
+//
 //     f = write(1, &c, 1);
 //     c = "@";
 //     printf("%s \n", ft_strmapi(s, f));
 //     return(0);
 // }
+//
+// FUNCTION: applies function to every character of a string,
+// results are put in a new allocated string

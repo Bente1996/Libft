@@ -44,7 +44,7 @@ $(NAME): $(OBJFILES)
 	ar -rcs $(NAME) $(OBJFILES)
 
 %.o: %.c
-	gcc $(CFLAGS) $^
+	cc $(CFLAGS) $^
 
 clean:
 	rm -f $(OBJFILES)

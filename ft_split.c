@@ -6,12 +6,10 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:36:23 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/14 18:40:41 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:32:33 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	strcount(char const *s, char c)
@@ -99,7 +97,7 @@ char	**ft_split(char const *s, char c)
 // {
 // 	char const	s[50] = "stringy    thingy swag  fsfsfs sfsfsf ";
 // 	size_t	i = 0;
-
+//
 // 	char **split = ft_split(s, ' ');
 // 	if (split == NULL)
 // 		printf("null returned :(\n");
@@ -113,7 +111,7 @@ char	**ft_split(char const *s, char c)
 // 	}
 // 	return(0);
 // }
-
+//
 // Parameters s: The string to be split.
 // c: The delimiter character.
 // Return value The array of new strings resulting from the split.

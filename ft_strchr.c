@@ -6,11 +6,11 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:54:01 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/13 18:34:19 by bde-koni         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:32:42 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -37,9 +37,11 @@ char	*ft_strchr(const char *s, int c)
 // int main(void)
 // {
 //     char    s[50] = "hahahh7aha"; 
-
+//
 //     printf("%p \n", ft_strchr(s, '7'));
 //     printf("%s \n", ft_strchr(s, '7')); 
 //call function again but start at s[i] = c ^
 //     return (0);
 // }
+//
+// FUNCTION: pointer to the first instance of c in s
