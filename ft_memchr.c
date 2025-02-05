@@ -6,12 +6,14 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:33:29 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 13:38:18 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:02:17 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: scans  the  initial n bytes of the memory area
+// pointed to by s for the first instance of c
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t					i;
@@ -43,6 +45,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 //     printf("%s \n", (char   *)ft_memchr(str, 'i', 2));
 //     return(0);
 // }
-//
-// FUNCTION: scans  the  initial n bytes of the memory area
-// pointed to by s for the first instance of c

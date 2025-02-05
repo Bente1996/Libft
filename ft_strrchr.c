@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:20:34 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:30:31 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:10:32 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: returns pointer to last instance of c in s
 char	*ft_strrchr(const char *s, int c)
 {
 	int	len;
@@ -39,5 +40,3 @@ char	*ft_strrchr(const char *s, int c)
 //     printf("%p \n", ft_strrchr(s, '&'));
 //     return (0);
 // }
-//
-// FUNCTION: returns pointer to last instance of c in s

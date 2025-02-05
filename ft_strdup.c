@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:53:05 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:32:46 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:09:26 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: allocates memory for a duplicate string of string s
 char	*ft_strdup(const char *s)
 {
 	char	*ptr;
@@ -40,5 +41,3 @@ char	*ft_strdup(const char *s)
 //     printf();
 //     return(0);
 // }
-//
-// FUNCTION: allocates memory for a duplicate string of string s

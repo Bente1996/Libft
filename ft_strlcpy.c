@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 12:59:57 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:35:30 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:10:00 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: copy src into dest
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t			i;
@@ -44,5 +45,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 //     printf("%s \n", dst);
 //     return (0);
 // }
-//
-// FUNCTION: copy src into dest

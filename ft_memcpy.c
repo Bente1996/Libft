@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:28:04 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 13:39:25 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:07:38 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: copies memory for n bytes
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*str;
@@ -41,5 +42,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 //     printf("%s \n", dest);
 //     return (0);
 // }
-//
-// FUNCTION: copies memory for n bytes

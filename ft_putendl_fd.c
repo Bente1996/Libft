@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:51:44 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:22:33 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:08:43 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: writes string and new line into certain file descriptor
 void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	i;
@@ -36,5 +37,3 @@ void	ft_putendl_fd(char *s, int fd)
 //     ft_putendl_fd(s, fd);
 //     return (0);
 // }
-//
-// FUNCTION: writes string and new line into certain file descriptor

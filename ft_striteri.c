@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 16:28:44 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:24:29 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:09:32 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: applies function to every character of a string
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
@@ -30,5 +31,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 // {
 //     return(0);
 // }
-//
-// FUNCTION: applies function to every character of a string

@@ -6,12 +6,14 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:18:59 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:48:00 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:10:13 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: applies function to every character of a string,
+// results are put in a new allocated string
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*str;
@@ -44,6 +46,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 //     printf("%s \n", ft_strmapi(s, f));
 //     return(0);
 // }
-//
-// FUNCTION: applies function to every character of a string,
-// results are put in a new allocated string

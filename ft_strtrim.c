@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:35:00 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:30:56 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:10:40 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: allocates and return trimmed string
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
@@ -39,5 +40,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 // 	printf("%s \n", ft_strtrim(s1, set));
 // 	return(0);
 // }
-//
-// FUNCTION: allocates and return trimmed string

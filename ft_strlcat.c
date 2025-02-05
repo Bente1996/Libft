@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:16:34 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:34:52 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:09:51 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION:copy and concatenate
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
@@ -50,5 +51,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 //     printf("%s \n", dst);
 //     return (0);
 // }
-//
-// FUNCTION:copy and concatenate

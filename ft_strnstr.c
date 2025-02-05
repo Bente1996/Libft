@@ -6,12 +6,14 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:51:17 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:48:25 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:10:24 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: locates first occurence of little string in big string,
+// where not more than len characters are searched
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
@@ -45,6 +47,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 //     printf("%s \n", ft_strnstr(big, little, 20));
 //     return(0);
 // }
-//
-// FUNCTION: locates first occurence of little string in big string,
-// where not more than len characters are searched

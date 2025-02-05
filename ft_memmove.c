@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:43:14 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:32:18 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:08:04 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: copies n bytes from memory area src to dest
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*str;
@@ -46,5 +47,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 //     printf("%s \n", str);
 //     return (0);
 // }
-//
-// FUNCTION: cpies n bytes from memory area src to dest

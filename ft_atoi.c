@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:19:28 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:31:46 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:00:26 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include "libft.h"
 
+//FUNCTION: characters to integer
 int	ft_atoi(const char *nptr)
 {
 	unsigned int	i;
@@ -47,5 +48,3 @@ int	ft_atoi(const char *nptr)
 //     printf("%d \n", ft_atoi(nptr));
 //     return(0);
 // }
-//
-//FUNCTION: characters to integer

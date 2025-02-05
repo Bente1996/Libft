@@ -6,12 +6,14 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:12:02 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:34:15 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:09:43 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: allocates and returns new string,
+// which is the result of the concatenation
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*s3;
@@ -47,6 +49,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // 	printf("%s \n", ft_strjoin(s1, s2));
 // 	return(0);
 // }
-//
-// FUNCTION: allocates and returns new string,
-// which is the result of the concatenation

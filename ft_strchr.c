@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:54:01 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:32:42 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:09:18 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: pointer to the first instance of c in s
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
@@ -43,5 +44,3 @@ char	*ft_strchr(const char *s, int c)
 //call function again but start at s[i] = c ^
 //     return (0);
 // }
-//
-// FUNCTION: pointer to the first instance of c in s

@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 17:22:17 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:20:51 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:08:36 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: writes character into certain file descriptor
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
@@ -24,5 +25,3 @@ void	ft_putchar_fd(char c, int fd)
 //     ft_putchar_fd(c, fd);
 //     return (0);
 // }
-//
-// FUNCTION: writes character into certain file descriptor

@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:11:49 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:31:51 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:00:46 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: NULL terminate values in string for n bytes
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*str;
@@ -34,5 +35,3 @@ void	ft_bzero(void *s, size_t n)
 //     printf("%s \n", ptr + 3);
 //     return (0);
 // }
-//
-// FUNCTION: NULL terminate values in string for n bytes

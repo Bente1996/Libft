@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:36:23 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:32:33 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:09:10 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,15 @@ void	increment(char const *s, char c, unsigned int	*start, size_t	*len)
 		*len = *len + 1;
 }
 
+// Parameters s: The string to be split.
+// c: The delimiter character.
+// Return value The array of new strings resulting from the split.
+// NULL if the allocation fails.
+// External functs. malloc, free
+// Description Allocates (with malloc(3)) and returns an array
+// of strings obtained by splitting ’s’ using the
+// character ’c’ as a delimiter. The array must end
+// with a NULL pointer.
 char	**ft_split(char const *s, char c)
 {
 	unsigned int	start;
@@ -111,13 +120,3 @@ char	**ft_split(char const *s, char c)
 // 	}
 // 	return(0);
 // }
-//
-// Parameters s: The string to be split.
-// c: The delimiter character.
-// Return value The array of new strings resulting from the split.
-// NULL if the allocation fails.
-// External functs. malloc, free
-// Description Allocates (with malloc(3)) and returns an array
-// of strings obtained by splitting ’s’ using the
-// character ’c’ as a delimiter. The array must end
-// with a NULL pointer.

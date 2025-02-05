@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:51:41 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:31:33 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:10:47 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: allocates and returns substring from s
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
@@ -43,5 +44,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 //     printf("%s \n", ft_substr(s, 8, 4));
 //     return(0);
 // }
-//
-// FUNCTION: allocates and returns substring from s

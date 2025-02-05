@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:55:22 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:21:33 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:08:50 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: writes integer into certain file descriptor
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	n2;
@@ -38,5 +39,3 @@ void	ft_putnbr_fd(int n, int fd)
 //     printf("\n");
 //     return (0);
 // }
-//
-// FUNCTION: writes integer into certain file descriptor

@@ -6,7 +6,7 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:39:31 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 13:38:12 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:01:42 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int	lencheck(long n)
 	return (len);
 }
 
+// FUNCTION: integer to characters
 char	*ft_itoa(int n)
 {
 	char	*s;
@@ -64,5 +65,3 @@ char	*ft_itoa(int n)
 //     printf("%s \n", ft_itoa(n));
 //     return(0);
 // }
-//
-// FUNCTION: integer to characters

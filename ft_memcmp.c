@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:18:56 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:32:08 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:02:46 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: compares the first n bytes of the memory areas s1 and s2.
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	n2;
@@ -41,5 +42,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 //     printf("%d \n", ft_memcmp(s1, s2, 3));
 //     return(0);
 // }
-//
-// FUNCTION: compares the first n bytes of the memory areas s1 and s2.

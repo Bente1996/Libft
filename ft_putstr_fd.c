@@ -6,12 +6,13 @@
 /*   By: bde-koni <bde-koni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 17:39:21 by bde-koni          #+#    #+#             */
-/*   Updated: 2024/11/19 15:22:03 by bde-koni         ###   ########.fr       */
+/*   Updated: 2025/02/05 12:08:57 by bde-koni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// FUNCTION: writtes string into certain file descriptor
 void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
@@ -31,5 +32,3 @@ void	ft_putstr_fd(char *s, int fd)
 //     ft_putstr_fd(s, fd);
 //     return (0);
 // }
-//
-// FUNCTION: writtes string into certain file descriptor
